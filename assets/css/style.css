@@ -1,9 +1,14 @@
+:root{
+
+    --Mostaza: #ffcd17;
+}
+
 body {
     margin: 0;
     background-image: url(../imgs/backg.jpg);
     background-position: top;
     background-attachment: fixed;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     font-family: noto sans;
     color: white;
     display: grid;
@@ -24,7 +29,7 @@ ul {
 }
 
 a:hover{
-    color: #ffcd17;
+    color: var(--Mostaza);
 }
 
 /********* MENÚ ********/
@@ -113,7 +118,7 @@ main p{
 }
 
 .persona{
-border: 1px solid #ffcd17;
+border: 1px solid var(--Mostaza);
 color:white;
 padding: 1rem;
 
@@ -161,7 +166,7 @@ padding: 1rem;
 }
 
 .box:hover {
-    border: solid 1px #ffcd17;
+    border: solid 1px var(--Mostaza);
 }
 
 .box:hover img {
@@ -186,6 +191,11 @@ footer {
     padding: 2rem;
 
 
+}
+
+.iconos a{
+    margin: .5rem;
+   
 }
 
 /*************** 992 **************/
@@ -247,7 +257,7 @@ footer{
 
 .iconos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
     
 }
